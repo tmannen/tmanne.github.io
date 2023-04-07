@@ -1,5 +1,25 @@
+.contact-button {
+  display: inline-block;
+  text-decoration: none;
+  font-family: 'Arial', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #236ac1;
+  padding: 10px 30px;
+  border-radius: 25px;
+  transition: background-color 0.2s;
+  margin-top: 50px;
+  &:visited {
+    color: darken($grey-color-light, 15%);
+  }
+}
+
+.contact-button:hover {
+  background-color: #2166bb;
+}
+
 .svg-background {
-  background-image: url("images/bg.svg");
+  background-image: url("images/vertical_bg.svg");
   min-height: $spacing-unit * 30;
 }
 
@@ -7,15 +27,15 @@
  * Site header
  */
 .site-header {
-  border-top: 5px solid $grey-color-dark;
-  border-bottom: 1px solid $grey-color-light;
   min-height: $spacing-unit * 1.865;
+  background-color: #140120;
 
   // Positioning context for the mobile navigation icon
   position: relative;
 }
 
 .site-header-wrapper, .splash-wrapper {
+  background-color: #140120;
   margin-left: 5%;
   margin-right: 5%;
   max-width: -webkit-calc(#{$header-width} - (#{$spacing-unit} * 2));
@@ -24,6 +44,7 @@
 
 .splash-wrapper {
   padding-top: 50px;
+  text-align: center;
 }
 
 .site-title {
@@ -36,7 +57,7 @@
 
   &,
   &:visited {
-    color: $grey-color-dark;
+    color: $grey-color-light;
   }
 }
 
@@ -53,7 +74,7 @@
   }
 
   .page-link {
-    color: $text-color;
+    color: $grey-color-light;
     line-height: $base-line-height;
 
     // Gaps between nav items, but not on the last one
@@ -65,7 +86,7 @@
   @include media-query($on-palm) {
     position: absolute;
     top: 9px;
-    right: $spacing-unit / 2;
+    right: $spacing-unit * 0.5;
     background-color: $background-color;
     border: 1px solid $grey-color-light;
     border-radius: 5px;
@@ -128,7 +149,7 @@
 
 .footer-heading {
   @include relative-font-size(1.125);
-  margin-bottom: $spacing-unit / 2;
+  margin-bottom: $spacing-unit * 0.5;
 }
 
 .contact-list,
@@ -140,49 +161,49 @@
 .footer-col-wrapper {
   @include relative-font-size(0.9375);
   color: $grey-color;
-  margin-left: -$spacing-unit / 2;
+  margin-left: -$spacing-unit * 0.5;
   @extend %clearfix;
 }
 
 .footer-col {
   float: left;
-  margin-bottom: $spacing-unit / 2;
-  padding-left: $spacing-unit / 2;
+  margin-bottom: $spacing-unit * 0.5;
+  padding-left: $spacing-unit * 0.5;
 }
 
 .footer-col-1 {
-  width: -webkit-calc(35% - (#{$spacing-unit} / 2));
-  width:         calc(35% - (#{$spacing-unit} / 2));
+  width: -webkit-calc(35% - (#{$spacing-unit} * 0.5));
+  width:         calc(35% - (#{$spacing-unit} * 0.5));
 }
 
 .footer-col-2 {
-  width: -webkit-calc(20% - (#{$spacing-unit} / 2));
-  width:         calc(20% - (#{$spacing-unit} / 2));
+  width: -webkit-calc(20% - (#{$spacing-unit} * 0.5));
+  width:         calc(20% - (#{$spacing-unit} * 0.5));
 }
 
 .footer-col-3 {
-  width: -webkit-calc(45% - (#{$spacing-unit} / 2));
-  width:         calc(45% - (#{$spacing-unit} / 2));
+  width: -webkit-calc(45% - (#{$spacing-unit} * 0.5));
+  width:         calc(45% - (#{$spacing-unit} * 0.5));
 }
 
 @include media-query($on-laptop) {
   .footer-col-1,
   .footer-col-2 {
-    width: -webkit-calc(50% - (#{$spacing-unit} / 2));
-    width:         calc(50% - (#{$spacing-unit} / 2));
+    width: -webkit-calc(50% - (#{$spacing-unit} * 0.5));
+    width:         calc(50% - (#{$spacing-unit} * 0.5));
   }
 
   .footer-col-3 {
-    width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-    width:         calc(100% - (#{$spacing-unit} / 2));
+    width: -webkit-calc(100% - (#{$spacing-unit} * 0.5));
+    width:         calc(100% - (#{$spacing-unit} * 0.5));
   }
 }
 
 @include media-query($on-palm) {
   .footer-col {
     float: none;
-    width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-    width:         calc(100% - (#{$spacing-unit} / 2));
+    width: -webkit-calc(100% - (#{$spacing-unit} * 0.5));
+    width:         calc(100% - (#{$spacing-unit} * 0.5));
   }
 }
 

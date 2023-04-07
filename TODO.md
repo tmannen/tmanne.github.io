@@ -1,0 +1,2 @@
+- expand about section, add past experience, link linkedin etc.
+- contact page better
