@@ -9,6 +9,7 @@
   border-radius: 25px;
   transition: background-color 0.2s;
   margin-top: 50px;
+  color: $grey-color-light;
   &:visited {
     color: darken($grey-color-light, 15%);
   }
